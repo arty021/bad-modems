@@ -1,0 +1,9 @@
+# Web Application Dependencies
+Flask>=3.0.0
+Werkzeug>=3.0.0
+
+# Core data processing
+pandas>=2.0.0
+
+# Production server (optional, for deployment)
+gunicorn>=21.2.0

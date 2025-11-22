@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: modem_analysis_web
+    ports:
+      - "5000:5000"
+    volumes:
+      # Persist uploaded files and analysis results
+      - ./data:/app/data
+      - ./uploads:/app/uploads
+    environment:
+      - FLASK_APP=app.py
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
