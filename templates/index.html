@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preventivno održavanje Vojvodina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">📡 Preventivno održavanje Vojvodina</h1>
+        </header>
+
+        <!-- City Navigation Tabs -->
+        <div class="city-tabs">
+            <button class="city-tab active" data-city="novi_sad" onclick="switchCity('novi_sad')">
+                <span class="city-icon">🏙️</span>
+                <span class="city-name">Novi Sad</span>
+            </button>
+            <button class="city-tab" data-city="sombor" onclick="switchCity('sombor')">
+                <span class="city-icon">🏛️</span>
+                <span class="city-name">Sombor</span>
+            </button>
+            <button class="city-tab" data-city="vrsac" onclick="switchCity('vrsac')">
+                <span class="city-icon">🏰</span>
+                <span class="city-name">Vršac</span>
+            </button>
+            <button class="city-tab" data-city="zrenjanin" onclick="switchCity('zrenjanin')">
+                <span class="city-icon">🏭</span>
+                <span class="city-name">Zrenjanin</span>
+            </button>
+            <button class="city-tab" data-city="vrbas" onclick="switchCity('vrbas')">
+                <span class="city-icon">🌾</span>
+                <span class="city-name">Vrbas</span>
+            </button>
+            <button class="city-tab" data-city="kikinda" onclick="switchCity('kikinda')">
+                <span class="city-icon">🌻</span>
+                <span class="city-name">Kikinda</span>
+            </button>
+        </div>
+
+        <!-- City Content Container -->
+        <div id="cityContent">
+            <div class="upload-section" id="uploadSection">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">📁</div>
+                    <h3>Prevucite CSV fajl u polje</h3>
+                    <p>ili kliknite na browse da izaberete fajl</p>
+                    <input type="file" id="fileInput" accept=".csv" hidden>
+                    <button class="btn-upload" id="browseBtn">Browse Files</button>
+                </div>
+                <div class="file-info" id="fileInfo" style="display: none;">
+                    <span id="fileName"></span>
+                    <button class="btn-remove" id="removeBtn">✕</button>
+                </div>
+            </div>
+
+            <div class="loading" id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Analyzing modem data...</p>
+            </div>
+
+            <div class="error-message" id="errorMessage" style="display: none;"></div>
+
+            <div class="no-data-message" id="noDataMessage" style="display: none;">
+                <div class="no-data-icon">📊</div>
+                <h3>No Data Available</h3>
+                <p>Upload a CSV file to see analysis results for <span id="currentCityName"></span></p>
+            </div>
+
+            <div class="results" id="results" style="display: none;">
+                <!-- Last Updated Info -->
+                <div class="last-updated" id="lastUpdated" style="display: none;">
+                    <span class="update-icon">🕒</span>
+                    <span id="updateTime"></span>
+                </div>
+
+                <!-- Summary Statistics -->
+                <div class="summary-section">
+                    <h2 class="section-title">📊 Sažeta statistika</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-value" id="totalModems">0</div>
+                            <div class="stat-label">Ukupan broj obrađenih modema</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" id="uspDspCount">0</div>
+                            <div class="stat-label">Broj loših modema po DS i US</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" id="uspDspDssCount">0</div>
+                            <div class="stat-label">Ukupan broj loših modema (PWR+DS SNR)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Visualization Charts -->
+                <div class="charts-section">
+                    <h2 class="section-title">📈 Grafički prikaz podataka</h2>
+                    <div class="charts-grid">
+                        <div class="chart-card">
+                            <h3 class="chart-title">Top 10 pojačavača sa PWR problemom</h3>
+                            <canvas id="ampChart"></canvas>
+                        </div>
+                        <div class="chart-card">
+                            <h3 class="chart-title">Top 10 čvorova sa PWR problemom</h3>
+                            <canvas id="onChart"></canvas>
+                        </div>
+                        <div class="chart-card">
+                            <h3 class="chart-title">Top 20 čvorova sa DS SNR problemom</h3>
+                            <canvas id="dssChart"></canvas>
+                        </div>
+                        <div class="chart-card full-width">
+                            <h3 class="chart-title">Tipovi problema</h3>
+                            <canvas id="issueTypeChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Top 10 AMP -->
+                <div class="table-section">
+                    <h2 class="section-title">🔝 Top 10 pojačavača sa PWR problemom</h2>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Ime pojačavača</th>
+                                    <th>Ukupan broj loših modema</th>
+                                    <th>US Power</th>
+                                    <th>DS Power</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ampTableBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Top 10 ON Nodes -->
+                <div class="table-section">
+                    <h2 class="section-title">🌐 Top 10 čvorova sa PWR problemom</h2>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Kod čvora</th>
+                                    <th>Ime čvora</th>
+                                    <th>Ukupan broj loših modema</th>
+                                    <th>US Power</th>
+                                    <th>DS Power</th>
+                                </tr>
+                            </thead>
+                            <tbody id="onTableBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Top 20 DSS -->
+                <div class="table-section">
+                    <h2 class="section-title">📉 Top 20 čvorova sa DS SNR problemom</h2>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Kod čvora</th>
+                                    <th>Ime čvora</th>
+                                    <th>Ukupan broj loših modema</th>
+                                </tr>
+                            </thead>
+                            <tbody id="dssTableBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-text">Developed by Dušan Belić</p>
+            <p class="footer-text">with assistance from Claude AI</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>

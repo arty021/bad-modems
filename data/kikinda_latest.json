@@ -1,0 +1,286 @@
+{
+  "success": true,
+  "summary": {
+    "total_modems": 10355,
+    "usp_dsp_count": 607,
+    "usp_dsp_dss_count": 803
+  },
+  "top_10_amp": [
+    {
+      "rank": 1,
+      "amp_name": "SVETOZARA MILETICA 26",
+      "total_count": 7,
+      "usp_count": 7,
+      "dsp_count": 0
+    },
+    {
+      "rank": 2,
+      "amp_name": "JOVANA JOVANOVICA ZMAJA 200  KA LEMELAMA 200A_200B",
+      "total_count": 6,
+      "usp_count": 5,
+      "dsp_count": 1
+    },
+    {
+      "rank": 3,
+      "amp_name": "NEMANJINA 28",
+      "total_count": 6,
+      "usp_count": 6,
+      "dsp_count": 0
+    },
+    {
+      "rank": 4,
+      "amp_name": "JOSIFA PANCICA 1 00B",
+      "total_count": 5,
+      "usp_count": 2,
+      "dsp_count": 4
+    },
+    {
+      "rank": 5,
+      "amp_name": "KRALJA PETRA PRVOG 34",
+      "total_count": 5,
+      "usp_count": 1,
+      "dsp_count": 4
+    },
+    {
+      "rank": 6,
+      "amp_name": "DJURE JAKSICA 14",
+      "total_count": 5,
+      "usp_count": 4,
+      "dsp_count": 1
+    },
+    {
+      "rank": 7,
+      "amp_name": "TRG SRPSKIH DOBROVOLJACA 19",
+      "total_count": 5,
+      "usp_count": 3,
+      "dsp_count": 2
+    },
+    {
+      "rank": 8,
+      "amp_name": "TRG SRPSKIH DOBROVOLJACA 13",
+      "total_count": 5,
+      "usp_count": 1,
+      "dsp_count": 4
+    },
+    {
+      "rank": 9,
+      "amp_name": "IVANA JAKSICA 87",
+      "total_count": 5,
+      "usp_count": 4,
+      "dsp_count": 2
+    },
+    {
+      "rank": 10,
+      "amp_name": "CARA DUSANA 149",
+      "total_count": 5,
+      "usp_count": 2,
+      "dsp_count": 4
+    }
+  ],
+  "top_10_on": [
+    {
+      "rank": 1,
+      "on_node": "ON-20-0005",
+      "on_name": "brace_tatica_6_II[ON-20-0005]",
+      "total_count": 19,
+      "usp_count": 6,
+      "dsp_count": 14
+    },
+    {
+      "rank": 2,
+      "on_node": "ON-20-0011",
+      "on_name": "vuka_karadzica_53[ON-20-0011]",
+      "total_count": 17,
+      "usp_count": 16,
+      "dsp_count": 3
+    },
+    {
+      "rank": 3,
+      "on_node": "ON-20-0004",
+      "on_name": "kosovska_3[ON-20-0004]",
+      "total_count": 16,
+      "usp_count": 12,
+      "dsp_count": 6
+    },
+    {
+      "rank": 4,
+      "on_node": "ON-20-0012",
+      "on_name": "save_tekelije_84[ON-20-0012]",
+      "total_count": 14,
+      "usp_count": 12,
+      "dsp_count": 3
+    },
+    {
+      "rank": 5,
+      "on_node": "ON-20-0008",
+      "on_name": "toze_markovica_150[ON-20-0008]",
+      "total_count": 14,
+      "usp_count": 10,
+      "dsp_count": 6
+    },
+    {
+      "rank": 6,
+      "on_node": "ON-20-0078",
+      "on_name": "blok_36_jugoviceva_25[ON-20-0055][ON-20-0078]",
+      "total_count": 13,
+      "usp_count": 6,
+      "dsp_count": 7
+    },
+    {
+      "rank": 7,
+      "on_node": "ON-20-0064",
+      "on_name": "partizanska_2a[ON-20-0064]",
+      "total_count": 13,
+      "usp_count": 8,
+      "dsp_count": 6
+    },
+    {
+      "rank": 8,
+      "on_node": "ON-20-0007",
+      "on_name": "njegoseva_178[ON-20-0007]",
+      "total_count": 12,
+      "usp_count": 8,
+      "dsp_count": 6
+    },
+    {
+      "rank": 9,
+      "on_node": "ON-20-0042",
+      "on_name": "trg_srpskih_dobrovoljaca_55[ON-20-0042]",
+      "total_count": 12,
+      "usp_count": 5,
+      "dsp_count": 7
+    },
+    {
+      "rank": 10,
+      "on_node": "ON-20-0034",
+      "on_name": "kosovska_9[ON-20-0034]",
+      "total_count": 12,
+      "usp_count": 7,
+      "dsp_count": 8
+    }
+  ],
+  "top_20_dss": [
+    {
+      "rank": 1,
+      "on_node": "ON-20-0037",
+      "on_name": "jovana_jovanovica_zmaja_206[ON-20-0037]",
+      "dss_count": 19
+    },
+    {
+      "rank": 2,
+      "on_node": "ON-20-0005",
+      "on_name": "brace_tatica_6_II[ON-20-0005]",
+      "dss_count": 12
+    },
+    {
+      "rank": 3,
+      "on_node": "ON-20-0039",
+      "on_name": "generala_milutinovica_26[ON-20-0039]",
+      "dss_count": 11
+    },
+    {
+      "rank": 4,
+      "on_node": "ON-20-0041",
+      "on_name": "semlacka_72[ON-20-0041]",
+      "dss_count": 11
+    },
+    {
+      "rank": 5,
+      "on_node": "ON-20-0066",
+      "on_name": "dusana_vasiljeva_52[ON-20-0066]",
+      "dss_count": 10
+    },
+    {
+      "rank": 6,
+      "on_node": "ON-20-0011",
+      "on_name": "vuka_karadzica_53[ON-20-0011]",
+      "dss_count": 10
+    },
+    {
+      "rank": 7,
+      "on_node": "ON-20-0018",
+      "on_name": "ivana_jaksica_115[ON-20-0018]",
+      "dss_count": 7
+    },
+    {
+      "rank": 8,
+      "on_node": "ON-20-0040",
+      "on_name": "jugoviceva_80[ON-20-0040]",
+      "dss_count": 7
+    },
+    {
+      "rank": 9,
+      "on_node": "ON-20-0012",
+      "on_name": "save_tekelije_84[ON-20-0012]",
+      "dss_count": 6
+    },
+    {
+      "rank": 10,
+      "on_node": "ON-20-0004",
+      "on_name": "kosovska_3[ON-20-0004]",
+      "dss_count": 6
+    },
+    {
+      "rank": 11,
+      "on_node": "ON-20-0091",
+      "on_name": "cara_dusana_26[ON-20-0091]",
+      "dss_count": 6
+    },
+    {
+      "rank": 12,
+      "on_node": "ON-20-0092",
+      "on_name": "cara_dusana_163[ON-20-0092]",
+      "dss_count": 5
+    },
+    {
+      "rank": 13,
+      "on_node": "ON-20-0063",
+      "on_name": "hajduk_veljkova_28[ON-20-0063]",
+      "dss_count": 5
+    },
+    {
+      "rank": 14,
+      "on_node": "ON-20-0090",
+      "on_name": "kralja_petra_i_139[ON-20-0090]",
+      "dss_count": 5
+    },
+    {
+      "rank": 15,
+      "on_node": "ON-20-3011",
+      "on_name": "mokrin_z_zrenjanina_51_zlgrede_17[ON-20-3011][ON-20-3012]",
+      "dss_count": 4
+    },
+    {
+      "rank": 16,
+      "on_node": "ON-20-0008",
+      "on_name": "toze_markovica_150[ON-20-0008]",
+      "dss_count": 4
+    },
+    {
+      "rank": 17,
+      "on_node": "ON-20-0080",
+      "on_name": "svetosavska_125[ON-20-0080]",
+      "dss_count": 4
+    },
+    {
+      "rank": 18,
+      "on_node": "ON-20-0079",
+      "on_name": "vojvode_putnika_141[ON-20-0079]",
+      "dss_count": 4
+    },
+    {
+      "rank": 19,
+      "on_node": "ON-20-0071",
+      "on_name": "svetosavska_21[ON-20-0071]",
+      "dss_count": 4
+    },
+    {
+      "rank": 20,
+      "on_node": "ON-20-0046",
+      "on_name": "miroslava_antica_17[ON-20-0046]",
+      "dss_count": 4
+    }
+  ],
+  "timestamp": "2025-11-22 14:27:25",
+  "city": "kikinda"
+}

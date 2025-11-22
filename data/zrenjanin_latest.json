@@ -1,0 +1,286 @@
+{
+  "success": true,
+  "summary": {
+    "total_modems": 18768,
+    "usp_dsp_count": 1508,
+    "usp_dsp_dss_count": 1900
+  },
+  "top_10_amp": [
+    {
+      "rank": 1,
+      "amp_name": "NUSICEVA 5",
+      "total_count": 14,
+      "usp_count": 11,
+      "dsp_count": 7
+    },
+    {
+      "rank": 2,
+      "amp_name": "MARKA ORESKOVICA 17",
+      "total_count": 11,
+      "usp_count": 11,
+      "dsp_count": 0
+    },
+    {
+      "rank": 3,
+      "amp_name": "DOKTORA VASE SAVICA 30",
+      "total_count": 10,
+      "usp_count": 10,
+      "dsp_count": 1
+    },
+    {
+      "rank": 4,
+      "amp_name": "RUZE SULMAN 49",
+      "total_count": 9,
+      "usp_count": 8,
+      "dsp_count": 2
+    },
+    {
+      "rank": 5,
+      "amp_name": "BARANJSKA 101",
+      "total_count": 8,
+      "usp_count": 8,
+      "dsp_count": 2
+    },
+    {
+      "rank": 6,
+      "amp_name": "BULEVAR VELJKA VLAHOVICA 5",
+      "total_count": 7,
+      "usp_count": 7,
+      "dsp_count": 0
+    },
+    {
+      "rank": 7,
+      "amp_name": "BULEVAR VELJKA VLAHOVICA 4",
+      "total_count": 7,
+      "usp_count": 7,
+      "dsp_count": 2
+    },
+    {
+      "rank": 8,
+      "amp_name": "SREMSKA 88",
+      "total_count": 6,
+      "usp_count": 6,
+      "dsp_count": 0
+    },
+    {
+      "rank": 9,
+      "amp_name": "SARAJLIJINA 3",
+      "total_count": 6,
+      "usp_count": 3,
+      "dsp_count": 4
+    },
+    {
+      "rank": 10,
+      "amp_name": "ZIKE GRUJINA 8B",
+      "total_count": 6,
+      "usp_count": 6,
+      "dsp_count": 1
+    }
+  ],
+  "top_10_on": [
+    {
+      "rank": 1,
+      "on_node": "ON-23-0086",
+      "on_name": "sumadijska[ON-23-0086]",
+      "total_count": 29,
+      "usp_count": 28,
+      "dsp_count": 3
+    },
+    {
+      "rank": 2,
+      "on_node": "ON-23-0011",
+      "on_name": "hercegovacka_3[ON-23-0011]",
+      "total_count": 28,
+      "usp_count": 27,
+      "dsp_count": 3
+    },
+    {
+      "rank": 3,
+      "on_node": "ON-23-0045",
+      "on_name": "dr_vase_savica_44[ON-23-0045]",
+      "total_count": 24,
+      "usp_count": 22,
+      "dsp_count": 3
+    },
+    {
+      "rank": 4,
+      "on_node": "ON-23-0073",
+      "on_name": "sremska_118[ON-23-0073]",
+      "total_count": 22,
+      "usp_count": 20,
+      "dsp_count": 6
+    },
+    {
+      "rank": 5,
+      "on_node": "ON-23-0037",
+      "on_name": "konstantina_danila_16[ON-23-0037]",
+      "total_count": 20,
+      "usp_count": 20,
+      "dsp_count": 0
+    },
+    {
+      "rank": 6,
+      "on_node": "ON-23-0048",
+      "on_name": "doktora_emila_gavrila_63[ON-23-0048]",
+      "total_count": 20,
+      "usp_count": 17,
+      "dsp_count": 4
+    },
+    {
+      "rank": 7,
+      "on_node": "ON-23-0070",
+      "on_name": "ruze_sulman_5[ON-23-0070]",
+      "total_count": 20,
+      "usp_count": 20,
+      "dsp_count": 0
+    },
+    {
+      "rank": 8,
+      "on_node": "ON-23-0069",
+      "on_name": "brigadira_ristica_2[ON-23-0069]",
+      "total_count": 20,
+      "usp_count": 14,
+      "dsp_count": 8
+    },
+    {
+      "rank": 9,
+      "on_node": "ON-23-0129",
+      "on_name": "nusiceva_9[ON-23-0129]",
+      "total_count": 19,
+      "usp_count": 15,
+      "dsp_count": 9
+    },
+    {
+      "rank": 10,
+      "on_node": "ON-23-0089",
+      "on_name": "milana_stanivukovica_98a[ON-23-0089]",
+      "total_count": 19,
+      "usp_count": 10,
+      "dsp_count": 15
+    }
+  ],
+  "top_20_dss": [
+    {
+      "rank": 1,
+      "on_node": "ON-23-0069",
+      "on_name": "brigadira_ristica_2[ON-23-0069]",
+      "dss_count": 30
+    },
+    {
+      "rank": 2,
+      "on_node": "ON-23-0007",
+      "on_name": "vojvode_petra_bojovica_1[ON-23-0007]",
+      "dss_count": 11
+    },
+    {
+      "rank": 3,
+      "on_node": "ON-23-0015",
+      "on_name": "zarka_turinskog_66_LB[ON-23-0015]",
+      "dss_count": 11
+    },
+    {
+      "rank": 4,
+      "on_node": "ON-23-0055",
+      "on_name": "zelengorska_37_bosanska_17a[ON-23-0055][ON-23-0177]",
+      "dss_count": 10
+    },
+    {
+      "rank": 5,
+      "on_node": "ON-23-0091",
+      "on_name": "zabaljska_117[ON-23-0091]",
+      "dss_count": 10
+    },
+    {
+      "rank": 6,
+      "on_node": "ON-23-0075",
+      "on_name": "b_rist_6[ON-23-0075]",
+      "dss_count": 10
+    },
+    {
+      "rank": 7,
+      "on_node": "ON-23-0073",
+      "on_name": "sremska_118[ON-23-0073]",
+      "dss_count": 9
+    },
+    {
+      "rank": 8,
+      "on_node": "ON-23-0079",
+      "on_name": "koste_racina_11[ON-23-0079]",
+      "dss_count": 9
+    },
+    {
+      "rank": 9,
+      "on_node": "ON-23-5001",
+      "on_name": "novosadska_2_ljubljanska_7a[ON-23-5001][ON-23-5002]",
+      "dss_count": 9
+    },
+    {
+      "rank": 10,
+      "on_node": "ON-23-0078",
+      "on_name": "junaka_milana_tepica_4[ON-23-0078]",
+      "dss_count": 9
+    },
+    {
+      "rank": 11,
+      "on_node": "ON-23-0089",
+      "on_name": "milana_stanivukovica_98a[ON-23-0089]",
+      "dss_count": 8
+    },
+    {
+      "rank": 12,
+      "on_node": "ON-23-0032",
+      "on_name": "strelisna_3[ON-23-0032]",
+      "dss_count": 8
+    },
+    {
+      "rank": 13,
+      "on_node": "ON-23-0183",
+      "on_name": "takovska_94_LB_karadjordjev_trg_10[ON-23-0140][ON-23-0183]",
+      "dss_count": 8
+    },
+    {
+      "rank": 14,
+      "on_node": "ON-23-0088",
+      "on_name": "stevice_jovanovica_2[ON-23-0088]",
+      "dss_count": 8
+    },
+    {
+      "rank": 15,
+      "on_node": "ON-23-0051",
+      "on_name": "tose_jovanovica_47[ON-23-0051]",
+      "dss_count": 7
+    },
+    {
+      "rank": 16,
+      "on_node": "ON-23-0049",
+      "on_name": "dr_kornela_radulovica_2[ON-23-0049]",
+      "dss_count": 7
+    },
+    {
+      "rank": 17,
+      "on_node": "ON-23-0020",
+      "on_name": "ruze_sulman_44[ON-23-0020]",
+      "dss_count": 7
+    },
+    {
+      "rank": 18,
+      "on_node": "ON-23-0114",
+      "on_name": "klek_save_kovacevica_bb_maja_benderaca_26[ON-23-0114][ON-23-0119]",
+      "dss_count": 7
+    },
+    {
+      "rank": 19,
+      "on_node": "ON-23-0129",
+      "on_name": "nusiceva_9[ON-23-0129]",
+      "dss_count": 7
+    },
+    {
+      "rank": 20,
+      "on_node": "ON-23-0035",
+      "on_name": "milentija_popovica_35[ON-23-0035]",
+      "dss_count": 7
+    }
+  ],
+  "timestamp": "2025-11-22 02:59:58",
+  "city": "zrenjanin"
+}

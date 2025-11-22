@@ -1,0 +1,286 @@
+{
+  "success": true,
+  "summary": {
+    "total_modems": 85318,
+    "usp_dsp_count": 5081,
+    "usp_dsp_dss_count": 7737
+  },
+  "top_10_amp": [
+    {
+      "rank": 1,
+      "amp_name": "CARA UROSA 11",
+      "total_count": 13,
+      "usp_count": 7,
+      "dsp_count": 13
+    },
+    {
+      "rank": 2,
+      "amp_name": "BALZAKOVA 27",
+      "total_count": 13,
+      "usp_count": 2,
+      "dsp_count": 11
+    },
+    {
+      "rank": 3,
+      "amp_name": "SAFARIKOVA 33",
+      "total_count": 10,
+      "usp_count": 3,
+      "dsp_count": 7
+    },
+    {
+      "rank": 4,
+      "amp_name": "STRUKTURNO POJACALO ON-3",
+      "total_count": 10,
+      "usp_count": 10,
+      "dsp_count": 0
+    },
+    {
+      "rank": 5,
+      "amp_name": "FUTOSKI PUT 28B",
+      "total_count": 10,
+      "usp_count": 10,
+      "dsp_count": 3
+    },
+    {
+      "rank": 6,
+      "amp_name": "NARODNOG FRONTA 39",
+      "total_count": 10,
+      "usp_count": 10,
+      "dsp_count": 0
+    },
+    {
+      "rank": 7,
+      "amp_name": "LAZE NANCICA 1B",
+      "total_count": 9,
+      "usp_count": 9,
+      "dsp_count": 0
+    },
+    {
+      "rank": 8,
+      "amp_name": "STRUKTURNI POJACAVAC MISE DIMITRIJEVICA 89",
+      "total_count": 8,
+      "usp_count": 8,
+      "dsp_count": 1
+    },
+    {
+      "rank": 9,
+      "amp_name": "TONE HADZICA 25",
+      "total_count": 8,
+      "usp_count": 8,
+      "dsp_count": 1
+    },
+    {
+      "rank": 10,
+      "amp_name": "BULEVAR DESPOTA STEFANA 2",
+      "total_count": 8,
+      "usp_count": 8,
+      "dsp_count": 2
+    }
+  ],
+  "top_10_on": [
+    {
+      "rank": 1,
+      "on_node": "ON-05-5026",
+      "on_name": "ns-sa-rpd_pap_pavla_7_seg1[ON-05-5026]",
+      "total_count": 40,
+      "usp_count": 28,
+      "dsp_count": 16
+    },
+    {
+      "rank": 2,
+      "on_node": "ON-05-0057",
+      "on_name": "danila_kisa_6[ON-05-0057]",
+      "total_count": 37,
+      "usp_count": 33,
+      "dsp_count": 12
+    },
+    {
+      "rank": 3,
+      "on_node": "ON-05-5019",
+      "on_name": "ns-sa-rpd_cirpanova_40_seg1[ON-05-5019]",
+      "total_count": 34,
+      "usp_count": 23,
+      "dsp_count": 20
+    },
+    {
+      "rank": 4,
+      "on_node": "ON-05-0238",
+      "on_name": "ns-at-narodnog_fronta_69_narodnog_fronta_73[ON-05-0238][ON-05-0604]",
+      "total_count": 34,
+      "usp_count": 30,
+      "dsp_count": 5
+    },
+    {
+      "rank": 5,
+      "on_node": "ON-05-5050",
+      "on_name": "ns-sa-arse_teodorovica_27_seg2[ON-05-5050]",
+      "total_count": 33,
+      "usp_count": 24,
+      "dsp_count": 12
+    },
+    {
+      "rank": 6,
+      "on_node": "ON-05-5035",
+      "on_name": "ns-he-lovcenska_16_seg2[ON-05-5035]",
+      "total_count": 33,
+      "usp_count": 25,
+      "dsp_count": 9
+    },
+    {
+      "rank": 7,
+      "on_node": "ON-05-5048",
+      "on_name": "ns-sa-dimitrija_avramovica_7_seg1[ON-05-5048]",
+      "total_count": 33,
+      "usp_count": 25,
+      "dsp_count": 12
+    },
+    {
+      "rank": 8,
+      "on_node": "ON-05-5064",
+      "on_name": "ns-ko-rpd_vase_pelagica_3_seg1[ON-05-5064]",
+      "total_count": 32,
+      "usp_count": 32,
+      "dsp_count": 2
+    },
+    {
+      "rank": 9,
+      "on_node": "ON-05-0296",
+      "on_name": "janka_cmelika_25[ON-05-0296]",
+      "total_count": 30,
+      "usp_count": 23,
+      "dsp_count": 8
+    },
+    {
+      "rank": 10,
+      "on_node": "ON-05-0412",
+      "on_name": "patrijarha_rajacica_18a_arcibalda_rajsa_25[ON-05-0412][ON-05-0656]",
+      "total_count": 28,
+      "usp_count": 11,
+      "dsp_count": 21
+    }
+  ],
+  "top_20_dss": [
+    {
+      "rank": 1,
+      "on_node": "ON-05-0066",
+      "on_name": "ivana_boldizara_123_(lipov_gaj)[ON-05-0066]",
+      "dss_count": 93
+    },
+    {
+      "rank": 2,
+      "on_node": "ON-05-0393",
+      "on_name": "prol_djnedelj_sgoldman_smajorosa[ON-05-0400][ON-05-0401][ON-05-0398][ON-05-0393]",
+      "dss_count": 45
+    },
+    {
+      "rank": 3,
+      "on_node": "ON-05-0030",
+      "on_name": "zeleznicka_15_tx1[ON-05-0030]",
+      "dss_count": 38
+    },
+    {
+      "rank": 4,
+      "on_node": "ON-05-7239",
+      "on_name": "ns-fu-dimitrija_lazareva_rase_2[ON-05-7239]",
+      "dss_count": 35
+    },
+    {
+      "rank": 5,
+      "on_node": "ON-05-5019",
+      "on_name": "ns-sa-rpd_cirpanova_40_seg1[ON-05-5019]",
+      "dss_count": 27
+    },
+    {
+      "rank": 6,
+      "on_node": "ON-05-0548",
+      "on_name": "lukijana_musickog_4[ON-05-0548]",
+      "dss_count": 26
+    },
+    {
+      "rank": 7,
+      "on_node": "ON-05-0489",
+      "on_name": "svetosavska_20[ON-05-0489]",
+      "dss_count": 26
+    },
+    {
+      "rank": 8,
+      "on_node": "ON-05-0567",
+      "on_name": "dositejeva_11[ON-05-0567]",
+      "dss_count": 25
+    },
+    {
+      "rank": 9,
+      "on_node": "ON-05-0267",
+      "on_name": "valentina_vodnika_23[ON-05-0267]",
+      "dss_count": 24
+    },
+    {
+      "rank": 10,
+      "on_node": "ON-05-0447",
+      "on_name": "sumadijska_18[ON-05-0447]",
+      "dss_count": 22
+    },
+    {
+      "rank": 11,
+      "on_node": "ON-05-0302",
+      "on_name": "rudnicka_37_cerevicka_38_m_bursac_53[ON-05-0302][ON-05-0468][ON-05-0354]",
+      "dss_count": 21
+    },
+    {
+      "rank": 12,
+      "on_node": "ON-05-5020",
+      "on_name": "ns-sa-rpd_micurinova_32_seg2[ON-05-5020]",
+      "dss_count": 21
+    },
+    {
+      "rank": 13,
+      "on_node": "ON-05-5051",
+      "on_name": "ns-sa-cirpanova_15_seg1[ON-05-5051]",
+      "dss_count": 20
+    },
+    {
+      "rank": 14,
+      "on_node": "ON-05-0080",
+      "on_name": "milana_simovica_2[ON-05-0080]",
+      "dss_count": 19
+    },
+    {
+      "rank": 15,
+      "on_node": "ON-05-0463",
+      "on_name": "gajeva_22[ON-05-0463]",
+      "dss_count": 18
+    },
+    {
+      "rank": 16,
+      "on_node": "ON-05-0049",
+      "on_name": "suboticka_28[ON-05-0049]",
+      "dss_count": 18
+    },
+    {
+      "rank": 17,
+      "on_node": "ON-05-0396",
+      "on_name": "koviljska_avlatkovic_todora_manojlovica[ON-05-0403][ON-05-0420][ON-05-0396]",
+      "dss_count": 18
+    },
+    {
+      "rank": 18,
+      "on_node": "ON-05-0113",
+      "on_name": "bulevar_oslobodjenja_23[ON-05-0113]",
+      "dss_count": 18
+    },
+    {
+      "rank": 19,
+      "on_node": "ON-05-0076",
+      "on_name": "senteleki_kornela_25[ON-05-0076]",
+      "dss_count": 18
+    },
+    {
+      "rank": 20,
+      "on_node": "ON-05-0243",
+      "on_name": "fejes_klare_42[ON-05-0243]",
+      "dss_count": 18
+    }
+  ],
+  "timestamp": "2025-11-22 14:25:15",
+  "city": "novi_sad"
+}
