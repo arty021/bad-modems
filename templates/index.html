@@ -82,21 +82,113 @@
                     <span id="updateTime"></span>
                 </div>
 
-                <!-- Summary Statistics -->
-                <div class="summary-section">
-                    <h2 class="section-title">📊 Sažeta statistika</h2>
-                    <div class="stats-grid">
-                        <div class="stat-card">
-                            <div class="stat-value" id="totalModems">0</div>
-                            <div class="stat-label">Ukupan broj obrađenih modema</div>
+                <!-- Network Health Dashboard -->
+                <div class="health-dashboard-section">
+                    <h2 class="section-title">🏥 Zdravlje mreže</h2>
+                    <div class="health-dashboard">
+                        <!-- Main Health Gauge -->
+                        <div class="health-gauge-container">
+                            <div class="gauge-wrapper">
+                                <svg class="health-gauge-svg" viewBox="0 0 200 120">
+                                    <defs>
+                                        <linearGradient id="gaugeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" style="stop-color:#ff3b30" />
+                                            <stop offset="50%" style="stop-color:#ffcc00" />
+                                            <stop offset="100%" style="stop-color:#4cd964" />
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Background arc -->
+                                    <path class="gauge-bg" d="M 20 100 A 80 80 0 0 1 180 100" fill="none"
+                                        stroke="rgba(255,255,255,0.1)" stroke-width="12" stroke-linecap="round" />
+                                    <!-- Colored arc -->
+                                    <path class="gauge-fill" d="M 20 100 A 80 80 0 0 1 180 100" fill="none"
+                                        stroke="url(#gaugeGradient)" stroke-width="12" stroke-linecap="round"
+                                        stroke-dasharray="251.2" stroke-dashoffset="251.2" />
+                                </svg>
+                                <div class="gauge-center-text">
+                                    <span class="health-score" id="healthScore">0%</span>
+                                    <span class="health-label">Zdravlje</span>
+                                </div>
+                            </div>
+                            <div class="health-status" id="healthStatus">
+                                <span class="status-icon">📊</span>
+                                <span class="status-text">Učitavanje...</span>
+                            </div>
+                            <!-- Total Modems Display -->
+                            <div class="total-modems-display">
+                                <span class="total-modems-label">Ukupan broj modema:</span>
+                                <span class="total-modems-value" id="totalModemsHealth">0</span>
+                            </div>
                         </div>
-                        <div class="stat-card">
-                            <div class="stat-value" id="uspDspCount">0</div>
-                            <div class="stat-label">Broj loših modema po DS i US</div>
+
+                        <!-- Health Metrics Cards -->
+                        <div class="health-metrics">
+                            <div class="metric-card healthy">
+                                <div class="metric-icon">✅</div>
+                                <div class="metric-content">
+                                    <div class="metric-value" id="healthyModems">0</div>
+                                    <div class="metric-label">Zdravi modemi</div>
+                                    <div class="metric-percent" id="healthyPercent">0%</div>
+                                </div>
+                                <div class="metric-bar">
+                                    <div class="metric-bar-fill healthy-bar" id="healthyBar" style="width: 0%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="metric-card warning">
+                                <div class="metric-icon">⚡</div>
+                                <div class="metric-content">
+                                    <div class="metric-value" id="pwrIssues">0</div>
+                                    <div class="metric-label">PWR problemi (US/DS)</div>
+                                    <div class="metric-percent" id="pwrPercent">0%</div>
+                                </div>
+                                <div class="metric-bar">
+                                    <div class="metric-bar-fill warning-bar" id="pwrBar" style="width: 0%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="metric-card info">
+                                <div class="metric-icon">📶</div>
+                                <div class="metric-content">
+                                    <div class="metric-value" id="snrIssues">0</div>
+                                    <div class="metric-label">SNR problemi (samo DS SNR)</div>
+                                    <div class="metric-percent" id="snrPercent">0%</div>
+                                </div>
+                                <div class="metric-bar">
+                                    <div class="metric-bar-fill info-bar" id="snrBar" style="width: 0%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="metric-card danger">
+                                <div class="metric-icon">🔴</div>
+                                <div class="metric-content">
+                                    <div class="metric-value" id="totalIssues">0</div>
+                                    <div class="metric-label">Ukupno loših modema</div>
+                                    <div class="metric-percent" id="totalPercent">0%</div>
+                                </div>
+                                <div class="metric-bar">
+                                    <div class="metric-bar-fill danger-bar" id="totalBar" style="width: 0%;"></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="stat-card">
-                            <div class="stat-value" id="uspDspDssCount">0</div>
-                            <div class="stat-label">Ukupan broj loših modema (PWR+DS SNR)</div>
+                    </div>
+                </div>
+
+                <!-- New Entries Summary -->
+                <div class="new-entries-section" id="newEntriesSummary" style="display: none;">
+                    <h2 class="section-title">🆕 Nove stavke u odnosu na prethodno</h2>
+                    <div class="stats-grid new-stats-grid">
+                        <div class="stat-card new-stat-card">
+                            <div class="stat-value" id="newAmpCount">0</div>
+                            <div class="stat-label">Novih pojačavača</div>
+                        </div>
+                        <div class="stat-card new-stat-card">
+                            <div class="stat-value" id="newOnCount">0</div>
+                            <div class="stat-label">Novih čvorova (PWR)</div>
+                        </div>
+                        <div class="stat-card new-stat-card">
+                            <div class="stat-value" id="newDssCount">0</div>
+                            <div class="stat-label">Novih čvorova (DS SNR)</div>
                         </div>
                     </div>
                 </div>
@@ -106,20 +198,16 @@
                     <h2 class="section-title">📈 Grafički prikaz podataka</h2>
                     <div class="charts-grid">
                         <div class="chart-card">
-                            <h3 class="chart-title">Top 10 pojačavača sa PWR problemom</h3>
+                            <h3 class="chart-title">Top 10 pojačavača sa PWR problemom (%)</h3>
                             <canvas id="ampChart"></canvas>
                         </div>
                         <div class="chart-card">
-                            <h3 class="chart-title">Top 10 čvorova sa PWR problemom</h3>
+                            <h3 class="chart-title">Top 10 čvorova sa PWR problemom (%)</h3>
                             <canvas id="onChart"></canvas>
                         </div>
                         <div class="chart-card">
-                            <h3 class="chart-title">Top 20 čvorova sa DS SNR problemom</h3>
+                            <h3 class="chart-title">Top 20 čvorova sa DS SNR problemom (%)</h3>
                             <canvas id="dssChart"></canvas>
-                        </div>
-                        <div class="chart-card full-width">
-                            <h3 class="chart-title">Tipovi problema</h3>
-                            <canvas id="issueTypeChart"></canvas>
                         </div>
                     </div>
                 </div>
@@ -133,7 +221,8 @@
                                 <tr>
                                     <th>Rank</th>
                                     <th>Ime pojačavača</th>
-                                    <th>Ukupan broj loših modema</th>
+                                    <th>Kod pojačavača</th>
+                                    <th>Loši / Ukupno (%)</th>
                                     <th>US Power</th>
                                     <th>DS Power</th>
                                 </tr>
@@ -153,7 +242,7 @@
                                     <th>Rank</th>
                                     <th>Kod čvora</th>
                                     <th>Ime čvora</th>
-                                    <th>Ukupan broj loših modema</th>
+                                    <th>Loši / Ukupno (%)</th>
                                     <th>US Power</th>
                                     <th>DS Power</th>
                                 </tr>
@@ -173,7 +262,7 @@
                                     <th>Rank</th>
                                     <th>Kod čvora</th>
                                     <th>Ime čvora</th>
-                                    <th>Ukupan broj loših modema</th>
+                                    <th>Loši / Ukupno (%)</th>
                                 </tr>
                             </thead>
                             <tbody id="dssTableBody"></tbody>
